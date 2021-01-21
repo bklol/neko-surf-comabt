@@ -211,26 +211,8 @@ public void OnClientPutInServer(int client)
 void SendConVar(int client)
 {
 	char Values[10];
-	IntToString(1, Values, 10);
-	SendConVarValue(client, FindConVar("weapon_accuracy_nospread")        ,Values);
-	IntToString(10, Values, 10);
-	SendConVarValue(client, FindConVar("weapon_recoil_cooldown")          ,Values);
-	IntToString(99999, Values, 10);
-	SendConVarValue(client, FindConVar("weapon_recoil_decay1_exp")        ,Values);
-	IntToString(99999, Values, 10);
-	SendConVarValue(client, FindConVar("weapon_recoil_decay2_exp")        ,Values);
-	IntToString(99999, Values, 10);
-	SendConVarValue(client, FindConVar("weapon_recoil_decay2_lin")        ,Values);
 	IntToString(0, Values, 10);
 	SendConVarValue(client, FindConVar("weapon_recoil_scale")             ,Values);
-	IntToString(500, Values, 10);
-	SendConVarValue(client, FindConVar("weapon_recoil_suppression_shots") ,Values);
-	IntToString(0, Values, 10);
-	SendConVarValue(client, FindConVar("weapon_recoil_variance")          ,Values);
-	IntToString(0, Values, 10);
-	SendConVarValue(client, FindConVar("weapon_recoil_view_punch_extra")  ,Values);
-	IntToString(2, Values, 10);
-	SendConVarValue(client, FindConVar("weapon_recoil_view_punch_extra")  ,Values);
 	//thanks Franc1sco form SM Aimbot
 }
 

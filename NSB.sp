@@ -45,7 +45,7 @@ public Action round_prestart(Event event, const char[] name, bool dontBroadcast)
 	while((ent = FindEntityByClassname(ent, "trigger_teleport")) != -1)
 	{
 		HookSingleEntityOutput(ent, "OnStartTouch", Output_TeleStartTouch)
-   	}	
+   	}
 }
 
 public Action Event_WeaponFire(Event event, const char[] name, bool dontBroadcast)
